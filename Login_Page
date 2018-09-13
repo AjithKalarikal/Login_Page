@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>
+		Login page
+	</title>
+<script language="javascript">
+function check(form)
+{
+ if(form.userid.value == "Username" && form.pswrd.value == "password")
+  {
+    window.open('open.html')
+  }
+ else
+ {
+   alert("Login Unsuccesfull")
+  }
+}
+</script>
+</head>
+<body>
+<h1>
+Welcome
+</h1>
+<div class="form">
+<form name="login">
+<input type="text" name="userid" placeholder="  Username"/>
+<input type="password" name="pswrd" placeholder="  Password"/>
+<input type="submit" onclick="check(this.form)" value="Login"/>
+<input type="submit" value="Cancel"/>
+</form>
+</div>
+</body>
+</html>
